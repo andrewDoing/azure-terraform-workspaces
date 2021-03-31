@@ -1,10 +1,10 @@
 resource "azurerm_resource_group" "backend" {
-    name        = "andoing-backend-rg"
+    name        = "${var.project}-backend-rg"
     location    = var.location
 }
 
 resource "azurerm_storage_account" "backend" {
-  name                = "backendstateandoing"
+  name                = "backendstate${var.project}"
   resource_group_name = azurerm_resource_group.backend.name
   location            = azurerm_resource_group.backend.location
 
