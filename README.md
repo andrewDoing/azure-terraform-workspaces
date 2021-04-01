@@ -19,7 +19,7 @@ The configuration still has only one backend, but multiple distinct instances of
 ### 1. Deploy the terraform-backend 
 [Instructions](./terraform-backend/README.md) (located in the terraform-backend folder)
 
-### 2. Deploy the workspaced terraform-environment
+### 2. Deploy the terraform-environment in dev and prod workspaces
 [Instructions](./terraform-environment/README.md) (located in the terraform-environment folder)
 
 ## Workspaces illustrated in Portal
